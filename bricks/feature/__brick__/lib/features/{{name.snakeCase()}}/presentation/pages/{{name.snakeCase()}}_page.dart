@@ -2,7 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import 'package:haki/injectable/injecter.dart';
+import 'package:{{name.snakeCase()}}/injectable/injecter.dart';
 
 import '../cubit/{{name.snakeCase()}}_cubit.dart';
 
@@ -11,8 +11,7 @@ class {{name.pascalCase()}}Page extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MainScaffold(
-      title: 'title',
+    return Scaffold(
       child: BlocProvider(
         create: (_) => getIt<{{name.pascalCase()}}Cubit>(),
         child:  const _PageContent(),

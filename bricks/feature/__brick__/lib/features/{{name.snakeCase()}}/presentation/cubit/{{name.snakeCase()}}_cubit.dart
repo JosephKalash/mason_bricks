@@ -27,7 +27,7 @@ class {{name.pascalCase()}}Cubit extends Cubit<{{name.pascalCase()}}State> {
 
     either.fold(
       (error) => emit({{name.pascalCase()}}State.error(getErrorMessage(error))),
-      ({{name.pascalCase()}}) => emit({{name.pascalCase()}}State.got{{name.pascalCase()}}({{name.pascalCase()}})),
+      (dataList) => emit({{name.pascalCase()}}State.got{{name.pascalCase()}}(dataList)),
     );
   }
 }
