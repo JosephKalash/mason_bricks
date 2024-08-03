@@ -3,9 +3,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import 'package:{{name.snakeCase()}}/injectable/injecter.dart';
-
+import 'package:auto_route/auto_route.dart';
 import '../cubit/{{name.snakeCase()}}_cubit.dart';
 
+@RoutePage()
 class {{name.pascalCase()}}Page extends StatelessWidget {
   const {{name.pascalCase()}}Page();
 
